@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    tools:context=".LauncherActivity">
+
+    <TextView
+        android:id="@+id/textViewDate"
+        android:layout_width="250dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="211dp"
+        android:textAlignment="center"
+        android:textColor="#AE180E"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/textViewTime"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewTime"
+        android:layout_width="345dp"
+        android:layout_height="136dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="274dp"
+        android:textAlignment="center"
+        android:textColor="#e92215"
+        android:textSize="85sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/btnADDALARM"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewDate" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/btnADDALARM"
+        android:layout_width="204dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="178dp"
+        android:layout_marginTop="240dp"
+        android:layout_marginEnd="177dp"
+        android:backgroundTint="#ab3add"
+        android:src="@drawable/baseline_add_alarm_24"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewTime" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
