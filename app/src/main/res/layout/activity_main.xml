@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#F6F2F2"
+    android:background="#CFC9C9"
     tools:context=".MainActivity">
 
     <TimePicker
@@ -28,7 +28,8 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="243dp"
         android:layout_marginBottom="37dp"
-        android:backgroundTint="#9BABD3"
+        android:backgroundTint="#F3F4F8"
+        android:contentDescription=" "
         android:src="@drawable/baseline_add_alarm_24"
         app:layout_constraintBottom_toTopOf="@+id/listView"
         app:layout_constraintEnd_toEndOf="parent"
